@@ -1,0 +1,52 @@
+# Configuración de editores
+.vscode/
+.idea/
+
+# Dependencias
+node_modules/
+
+# Builds y distribución
+dist/
+build/
+out/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Logs y temporales
+*.log
+*.tmp
+
+# Variables de entorno
+.env
+.env.local
+.env.*.local
+
+# Cachés de frameworks y herramientas
+.cache/
+.next/
+.nuxt/
+.svelte-kit/
+.angular/
+.vercel/
+.netlify/
+
+# Coverage y pruebas
+coverage/
+
+# Tailwind (archivos generados por JIT)
+*.css.map
+
+# PhaserJS (assets exportados o compilados)
+assets/*.atlas
+assets/*.json
+assets/*.mp3
+assets/*.ogg
+assets/*.wav
+assets/*.mp4
+assets/*.webm
+
+# React (build y cachés específicos)
+*.eslintcache
+*.parcel-cache

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+:root {
+    --color-background: #151311;
+    --color-surface: #100e0c;
+    --color-surface-card: #1E1B18;
+    --color-primary: #f2ca50;
+    --color-gold-bright: #FFD700;
+    --color-sienna: #8C4A32;
+    --color-ochre: #C88A36;
+    --color-on-surface: #e7e1de;
+    --color-on-surface-variant: #d0c5af;
+
+    --font-display: "Playfair Display", serif;
+    --font-body: "Plus Jakarta Sans", sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: var(--color-background);
+    color: var(--color-on-surface);
+    font-family: var(--font-body);
+}
+
+header h1 {
+    font-family: var(--font-display);
+
+}
+
+
+#game-container canvas {
+    display: block;
+    border-radius: 8px;
+    max-width: 100%;
+    max-height: 100%;
+}

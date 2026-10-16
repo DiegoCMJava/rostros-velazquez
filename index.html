@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="web_standard" name="shell-type" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Los Rostros de Velázquez</title>
+</head>
+
+<body
+    class="min-h-screen flex flex-col justify-between bg-[#151311] text-[#e7e1de] selection:bg-[#f2ca50]/20 selection:text-[#f2ca50]">
+    <header class="w-full border-b border-[#d4af37]/20 bg-[#100e0c]/85 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-screen-xl max-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <div class="flex flex-col">
+                    <h1
+                        class="text-xl md:text-2xl font-bold tracking-tight text-[#f2ca50] drop-shadow-sm leading-tight">
+                        Los Rostros de Velázquez
+                    </h1>
+                    <p class="text-xs md:text-sm text-[#d0c5af] font-normal tracking-wide">
+                        Un juego para ejercitar la memoria
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main
+        class="relative flex-1 flex flex-col items-center justify-center px-2 sm:px-6 py-4 md:py-6 overflow-hidden bg-[#151311]">
+
+        <!-- Veladura cálida y tenebrista sutil -->
+        <div
+            class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(200,138,54,0.08)_0%,rgba(16,14,12,0.85)_85%)] pointer-events-none">
+        </div>
+        <div
+            class="absolute -top-32 left-1/2 -translate-x-1/2 w-[90vw] max-w[1000px] h-[350px] bg-[#f2ca50]/5 rounded-full blur-[140px] pointer-events-none">
+        </div>
+        <!-- contenedor del juego -->
+        <section class="relative z-10 w-[80%] max-w-[1700px] flex flex-col items-center justify-center">
+            <div id="game-container"
+                class="relative w-full aspect-video max-h-[85vh] rounded-lg bg-[#100e0c] border-2 border-[#8C4A32] shadow-[0_24px_60px_rgba(0,0,0,0.85),0_0_0_1px_rgba(212,175,55,0.35)] flex items-center justify-center overflow-hidden transition-all">
+            </div>
+        </section>
+    </main>
+    <footer class="w-full border-t border-[#2a241f] bg-[#100e0c] p-6 text-center text-xs text-[#d0c5af]">
+        <div class="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+            <p>
+                Desarrollado por <a href="https://github.com/DiegoCMJava" target="_blank" rel="noopener noreferrer"
+                    class="text-[#f2ca50] hover:underline font-medium"> DiegoCMJava </a>
+                usando la librería <a href="https://phaser.io/" target="_blank" rel="noopener noreferrer"
+                    class="text-[#f2ca50] hover:underline font-medium"> PhaserJS </a>
+                y recursos de <a href="https://opengameart.org/" target="_blank" rel="noopener noreferrer"
+                    class="text-[#f2ca50] hover:underline font-medium"
+                    class="text-[#f2ca50] hover:underline font-medium"> OpenGameArt </a> ||
+                Visita <a href="https://diegocmjava.github.io/proyecto-cosmos/" target="_blank"
+                    rel="noopener noreferrer" class="text-[#f2ca50] hover:underline font-medium"> ProyectoCosmos </a>
+                para
+                más cosas interesantes
+            </p>
+        </div>
+    </footer>
+    <script src="js/lib/phaser.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+
+</body>
+
+</html>
